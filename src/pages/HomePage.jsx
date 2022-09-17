@@ -12,7 +12,7 @@ const HomePage = () => {
         />
         <div className="mt-8">
           <p className="text-gray-400 text-lg">Software Engineer</p>
-          <h1 className="text-4xl mt-1">Igal Haimovitz</h1>
+          <h1 className="text-4xl mt-1 text-gray-800">Igal Haimovitz</h1>
           <p className="text-gray-500 my-12 ml-24">
             I have a strong passion for building full-stack applications. I am
             Experienced in front-end development, object-oriented programming,
