@@ -6,11 +6,15 @@ import FormValidation from '../images/form-validation.png';
 
 const Projects = () => {
   return (
-    <div className="mt-36 ml-12" id="projects">
+    <div className="mt-36 ml-12">
       <h1 className="text-4xl text-gray-800">My Projects</h1>
       <div className="mt-8 grid grid-cols-3 gap-x-8">
         {/* Project 1 */}
-        <a href="https://cryptocurrency-tracker-5d3ec.web.app/">
+        <a
+          href="https://cryptocurrency-tracker-5d3ec.web.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Card>
             <img src={Crypto} alt="crypto" className="mb-4 rounded-t-lg" />
             <div className="p-2 ml-4">
@@ -31,7 +35,11 @@ const Projects = () => {
           </Card>
         </a>
         {/* Project 2 */}
-        <a href="https://form-validation-noden.netlify.app/">
+        <a
+          href="https://form-validation-noden.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Card>
             <img
               src={FormValidation}

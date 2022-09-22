@@ -1,19 +1,25 @@
+// components
+import Container from './Container';
 // react-icons
 import { MdEmail } from 'react-icons/md';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
 const Resume = () => {
   return (
-    <div id="resume">
-      <div className="flex items-center justify-around">
+    <Container>
+      <div className="flex items-center justify-around border-b-2 pb-4">
         <div className="flex items-center">
           <MdEmail className="text-3xl text-slate-500" />
           <p className="pl-2">igalhaimovitz@gmail.com</p>
         </div>
-        <a href="https://www.linkedin.com/in/igalhaimovitz/">
+        <a
+          href="https://www.linkedin.com/in/igalhaimovitz/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsLinkedin className="text-3xl text-blue-600" />
         </a>
-        <a href="https://github.com/igal1290">
+        <a href="https://github.com/igal1290" target="_blank" rel="noreferrer">
           <BsGithub className="text-3xl text-slate-700" />
         </a>
       </div>
@@ -25,7 +31,7 @@ const Resume = () => {
           <div className="mt-2">
             <p className="font-semibold">Brooklyn College CUNY</p>
             <p>Bachelor of Science in Computer Science</p>
-            <p>01-2020 - 12/2022</p>
+            <p>01/2020 - 12/2022</p>
             <p>Major GPA: 3.56/4.0</p>
           </div>
           <div className="mt-6">
@@ -52,7 +58,7 @@ const Resume = () => {
             </div>
             <div className="flex">
               <p>Tools:</p>
-              <p className="ml-2">Git</p>
+              <p className="ml-2">Git, NPM</p>
             </div>
           </div>
           <div className="mt-4">
@@ -62,7 +68,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
