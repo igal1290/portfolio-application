@@ -6,7 +6,7 @@ import FormValidation from '../images/form-validation.png';
 
 const Projects = () => {
   return (
-    <div className="mt-36 ml-12">
+    <div className="mt-36 ml-12 mb-8">
       <h1 className="text-4xl text-gray-800">My Projects</h1>
       <div className="mt-8 grid grid-cols-3 gap-x-8">
         {/* Project 1 */}

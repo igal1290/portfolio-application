@@ -23,7 +23,7 @@ const Resume = () => {
           <BsGithub className="text-3xl text-slate-700" />
         </a>
       </div>
-      <div className="ml-12">
+      <div className="ml-12 mb-8">
         <div className="mt-16">
           <h2 className="text-2xl text-slate-500 font-medium uppercase">
             Education
