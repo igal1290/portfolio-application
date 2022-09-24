@@ -32,11 +32,11 @@ const Navbar = () => {
   };
 
   const scrollToResume = () => {
-    Scroll.scrollTo(1290);
+    Scroll.scrollTo(1297);
   };
 
   const scrollToContact = () => {
-    Scroll.scrollTo(2100);
+    Scroll.scrollTo(2107);
   };
 
   return (

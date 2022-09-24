@@ -16,7 +16,7 @@ const HomePage = () => {
   };
 
   const scrollToResume = () => {
-    Scroll.scrollTo(1290);
+    Scroll.scrollTo(1297);
   };
 
   return (

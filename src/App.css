@@ -4,3 +4,9 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: rgb(59 130 246);
 }
+
+/* SVGs */
+.email-logo {
+  fill: rgb(59 130 246);
+  stroke: #333;
+}
