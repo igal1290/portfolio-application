@@ -7,7 +7,7 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs';
 const Resume = () => {
   return (
     <Container>
-      <div className="flex items-center justify-around border-b-2 pb-4">
+      <div className="flex gap-x-8 md:gap-x-0 md:flex-row items-center justify-around border-b-2 pb-4">
         <div className="flex items-center">
           <MdEmail className="text-3xl text-slate-500" />
           <p className="pl-2">igalhaimovitz@gmail.com</p>
@@ -23,7 +23,7 @@ const Resume = () => {
           <BsGithub className="text-3xl text-slate-700" />
         </a>
       </div>
-      <div className="ml-12 mb-8">
+      <div className="lg:mx-8 mb-8">
         <div className="mt-16">
           <h2 className="text-2xl text-slate-500 font-medium uppercase">
             Education

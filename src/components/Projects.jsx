@@ -6,9 +6,11 @@ import FormValidation from '../images/form-validation.png';
 
 const Projects = () => {
   return (
-    <div className="mt-36 ml-12 mb-8">
-      <h1 className="text-4xl text-gray-800">My Projects</h1>
-      <div className="mt-8 grid grid-cols-3 gap-x-8">
+    <div className="mt-36 mb-8 lg:mx-8">
+      <h1 className="text-2xl md:text-3xl text-gray-800 text-center lg:text-start">
+        My Projects
+      </h1>
+      <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-y-8 md:gap-x-8">
         {/* Project 1 */}
         <a
           href="https://cryptocurrency-tracker-5d3ec.web.app/"
@@ -17,7 +19,7 @@ const Projects = () => {
         >
           <Card>
             <img src={Crypto} alt="crypto" className="mb-4 rounded-t-lg" />
-            <div className="p-2 ml-4">
+            <div className="p-2">
               <h2 className="text-xl text-gray-800 font-medium">
                 Cryptocurrency Price Tracker
               </h2>

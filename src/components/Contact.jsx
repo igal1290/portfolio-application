@@ -66,10 +66,12 @@ const Contact = () => {
 
   return (
     <Container>
-      <div className="mx-12">
-        <h1 className="text-4xl text-gray-800 mb-8">Get in touch</h1>
-        <div className="flex justify-between items-center">
-          <form className="flex flex-col w-3/6" ref={form}>
+      <div className="lg:mx-8">
+        <h1 className="text-2xl md:text-3xl text-gray-800 mb-8 text-center xl:text-start">
+          Get in touch
+        </h1>
+        <div className="flex flex-col xl:flex-row justify-between items-center">
+          <form className="flex flex-col w-96 lg:w-3/6" ref={form}>
             <input
               type="text"
               name="user_name"
@@ -103,7 +105,11 @@ const Contact = () => {
             />
           </form>
 
-          <EmailLogo width={440} height={440} className="email-logo mb-24" />
+          <EmailLogo
+            width={440}
+            height={440}
+            className="email-logo mb-24 hidden xl:block"
+          />
         </div>
         {isSubmitted && (
           <p className="text-center mt-12 text-green-600">Message received!</p>
