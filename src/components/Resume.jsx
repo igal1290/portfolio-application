@@ -7,10 +7,12 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs';
 const Resume = () => {
   return (
     <Container>
-      <div className="flex gap-x-8 md:gap-x-0 md:flex-row items-center justify-around border-b-2 pb-4">
+      <div className="flex xs:gap-x-4 sm:gap-x-8 md:gap-x-0 md:flex-row items-center justify-around border-b-2 pb-4">
         <div className="flex items-center">
           <MdEmail className="text-3xl text-slate-500" />
-          <p className="pl-2">igalhaimovitz@gmail.com</p>
+          <p className="pl-2 xs:text-sm sm:text-base">
+            igalhaimovitz@gmail.com
+          </p>
         </div>
         <a
           href="https://www.linkedin.com/in/igalhaimovitz/"

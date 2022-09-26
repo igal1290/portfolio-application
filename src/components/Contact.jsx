@@ -71,7 +71,10 @@ const Contact = () => {
           Get in touch
         </h1>
         <div className="flex flex-col xl:flex-row justify-between items-center">
-          <form className="flex flex-col w-96 lg:w-3/6" ref={form}>
+          <form
+            className="flex flex-col w-80 sm:w-5/6 lg:w-5/6 xl:w-3/6"
+            ref={form}
+          >
             <input
               type="text"
               name="user_name"

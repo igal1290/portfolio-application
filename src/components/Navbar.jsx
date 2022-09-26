@@ -71,7 +71,7 @@ const Navbar = () => {
         <Link
           to="/#"
           onClick={scrollToResume}
-          className="mx-24 text-gray-700 hover:text-blue-500 ease-in-out duration-75 cursor-pointer"
+          className="mx-20 sm:mx-24 text-gray-700 hover:text-blue-500 ease-in-out duration-75 cursor-pointer"
         >
           Resume
         </Link>
