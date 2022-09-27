@@ -11,7 +11,7 @@ const Navbar = () => {
 
   // on scroll handler
   const onScrollHandler = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 65) {
       setOnScroll(true);
     } else {
       setOnScroll(false);
@@ -26,25 +26,12 @@ const Navbar = () => {
     Scroll.scrollToTop();
   };
 
-  // scroll to handler
-  const scrollToProjects = () => {
-    Scroll.scrollTo(760);
-  };
-
-  const scrollToResume = () => {
-    Scroll.scrollTo(1487);
-  };
-
-  const scrollToContact = () => {
-    Scroll.scrollTo(2297);
-  };
-
   return (
     <nav
       className={
         onScroll
-          ? 'flex flex-col md:flex-row justify-between items-center h-full w-full bg-white shadow-lg p-4 sticky top-0 z-50 opacity-95'
-          : 'flex flex-col md:flex-row justify-between items-center h-full w-full bg-white shadow-lg p-4 sticky top-0 z-50'
+          ? 'flex flex-col md:flex-row justify-between items-center h-full w-full bg-white shadow-lg p-4 sticky top-0 z-50'
+          : 'flex flex-col md:flex-row justify-between items-center h-full w-full bg-white p-4 sticky top-0 z-50'
       }
     >
       <div
@@ -62,22 +49,31 @@ const Navbar = () => {
       </div>
       <div className="flex items-center md:mr-4">
         <Link
-          to="/#"
-          onClick={scrollToProjects}
+          to="projects"
+          smooth={true}
+          spy={true}
+          offset={-120}
+          duration={1000}
           className="text-gray-700 hover:text-blue-500 ease-in-out duration-75 cursor-pointer"
         >
           Projects
         </Link>
         <Link
-          to="/#"
-          onClick={scrollToResume}
+          to="resume"
+          smooth={true}
+          spy={true}
+          offset={-165}
+          duration={1500}
           className="mx-20 sm:mx-24 text-gray-700 hover:text-blue-500 ease-in-out duration-75 cursor-pointer"
         >
           Resume
         </Link>
         <Link
-          to="/#"
-          onClick={scrollToContact}
+          to="contact"
+          smooth={true}
+          spy={true}
+          offset={-165}
+          duration={1500}
           className="text-gray-700 hover:text-blue-500 ease-in-out duration-75 cursor-pointer"
         >
           Contact

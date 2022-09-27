@@ -66,7 +66,7 @@ const Contact = () => {
 
   return (
     <Container>
-      <div className="lg:mx-8">
+      <div id="contact" className="lg:mx-8">
         <h1 className="text-2xl md:text-3xl text-gray-800 mb-8 text-center xl:text-start">
           Get in touch
         </h1>

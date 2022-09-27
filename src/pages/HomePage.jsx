@@ -4,21 +4,12 @@ import Resume from '../components/Resume';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 // react-scroll
-import { Link, animateScroll as Scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import Projects from '../components/Projects';
 // images
 import Avatar from '../images/Avatar.png';
 
 const HomePage = () => {
-  // scroll to handler
-  const scrollToProjects = () => {
-    Scroll.scrollTo(580);
-  };
-
-  const scrollToResume = () => {
-    Scroll.scrollTo(1297);
-  };
-
   return (
     <>
       <Container>
@@ -45,19 +36,25 @@ const HomePage = () => {
               NoSQL in order to build full scalable applications.
             </p>
             <div className="flex">
-              <Link to="projects" smooth={true} duration={1000}>
-                <button
-                  onClick={scrollToProjects}
-                  className="w-36 border-2 p-2 text-gray-700 border-blue-500 hover:bg-blue-500 hover:text-white ease-in-out duration-100 rounded-3xl"
-                >
+              <Link
+                to="projects"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                offset={-120}
+              >
+                <button className="w-36 border-2 p-2 text-gray-700 border-blue-500 hover:bg-blue-500 hover:text-white ease-in-out duration-100 rounded-3xl">
                   Projects
                 </button>
               </Link>
-              <Link to="resume" smooth={true} duration={1500}>
-                <button
-                  onClick={scrollToResume}
-                  className="w-36 ml-8 p-2 text-white bg-blue-500 hover:bg-blue-600 ease-in-out duration-75 rounded-3xl"
-                >
+              <Link
+                to="resume"
+                smooth={true}
+                duration={1500}
+                spy={true}
+                offset={-165}
+              >
+                <button className="w-36 ml-8 p-2 text-white bg-blue-500 hover:bg-blue-600 ease-in-out duration-75 rounded-3xl">
                   Resume
                 </button>
               </Link>

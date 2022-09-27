@@ -7,7 +7,10 @@ import FormValidation from '../images/form-validation.png';
 const Projects = () => {
   return (
     <div className="mt-36 mb-8 lg:mx-8">
-      <h1 className="text-2xl md:text-3xl text-gray-800 text-center lg:text-start">
+      <h1
+        id="projects"
+        className="text-2xl md:text-3xl text-gray-800 text-center lg:text-start"
+      >
         My Projects
       </h1>
       <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-y-8 md:gap-x-8">
